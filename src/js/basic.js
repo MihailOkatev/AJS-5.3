@@ -10,6 +10,7 @@ export default function tooltipDisplay(character) {
   const needlyKeys = ['name', 'type', 'level', 'attack', 'defence', 'health'];
   try {
     needlyKeys.forEach((item) => {
+      // eslint-disable-next-line no-prototype-builtins
       if (!character.hasOwnProperty(item)) {
         throw new Error('Набор данных не полон');
       }
@@ -18,6 +19,7 @@ export default function tooltipDisplay(character) {
     throw Error(e.message());
   }
   try {
+    // eslint-disable-next-line no-prototype-builtins
     if (!types.hasOwnProperty(character.type)) {
       throw new Error('Невозможный тип персонажа');
     }

@@ -26,5 +26,3 @@ console.log(tooltipDisplay({
   type: 'Bowman',
   health: 50,
 }));
-
-
